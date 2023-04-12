@@ -1,4 +1,4 @@
-const sidebarBtn = () => {
+
     $('.catalog-menu__btn-content').on('click', function(e){
         e.preventDefault();
         $('.wrap').toggleClass('active');
@@ -9,9 +9,5 @@ const sidebarBtn = () => {
         $('.wrap').removeClass('active');
         $('.title').removeClass('active');
     });
-};
-
-export default sidebarBtn;
-
 
 

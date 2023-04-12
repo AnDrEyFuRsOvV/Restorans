@@ -3,15 +3,17 @@
 @import './reset';
 @import './libs';
 @import './global';
-@import './Components-media/Menu/_login-media';
-@import './Components-media/Menu/_orders-media';
-@import './Components-media/Menu/_favorite-media';
-@import './Components-media/Menu/_adres-media';
-@import './Components-media/Menu/_notification-media';
-@import './Components-media/Menu/time-work-media';
-@import './Components-media/Menu/loyalty-media';
-@import './Components-media/Menu/language-media';
-@import './Components-media/Menu/about-qr-media';
+
+
+@import './pages-media-scss/menu-media/about-qr-media';
+@import './pages-media-scss/menu-media/adres-media';
+@import './pages-media-scss/menu-media/favorite-media';
+@import './pages-media-scss/menu-media/language-media';
+@import './pages-media-scss/menu-media/login-media';
+@import './pages-media-scss/menu-media/loyalty-media';
+@import './pages-media-scss/menu-media/notification-media';
+@import './pages-media-scss/menu-media/orders-media';
+@import './pages-media-scss/menu-media/time-work-media';
 
 @media (max-width: 1600px){
     .main{
@@ -394,6 +396,9 @@
     display: none;
     margin: 0;
     padding: 0;
+  }
+  .sidebar.not-visible{
+    display: none;
   }
 }
 @media (max-width: 830px){

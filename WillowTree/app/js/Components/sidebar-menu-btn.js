@@ -1,4 +1,4 @@
-const sidebarMenuBtn = () => {
+
     // $('.sidebar__login-btn').on('click', function(e){
     //     e.preventDefault();
     //     $('.login-page__box').toggleClass('active');
@@ -11,6 +11,3 @@ const sidebarMenuBtn = () => {
     //     $('.sidebar').removeClass('active');
     //     $('.login-page__box-title').removeClass('active');
     // });
-};
-
-export default sidebarMenuBtn;

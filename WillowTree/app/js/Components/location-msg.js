@@ -1,4 +1,4 @@
-const locationMsgMove = () => {
+
 // This function runs when the document is ready
 $(document).ready(function(){
     
@@ -140,6 +140,3 @@ setTimeout(function(element) {
       el.src = "images/info-img.svg"
     }
   }
-}
-
-export default locationMsgMove;

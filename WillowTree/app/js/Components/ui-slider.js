@@ -1,4 +1,4 @@
-const uiSlider = () => {
+
     // Link to the noUiSlider library: https://refreshless.com/nouislider/
     const rangeSlider = document.getElementById('rangeSlider');
 
@@ -55,6 +55,3 @@ const uiSlider = () => {
             }
         });
     }
-}
-
-export default uiSlider;

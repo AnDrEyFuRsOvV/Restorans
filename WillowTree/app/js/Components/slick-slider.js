@@ -104,8 +104,8 @@
             {
                 breakpoint: 1150,
                 settings: {
-                    prevArrow: '<button type="button" class="left__arrow-slider"><img src="./images/card-detale/left-arrow.svg" alt=""></button>',
-                    nextArrow: '<button type="button" class="right__arrow-slider"><img src="./images/card-detale/rigt-arrow.svg" alt=""></button>',
+                    prevArrow: '<button type="button" class="left__arrow-slider"><img src="../images/card-detale/left-arrow.svg" alt=""></button>',
+                    nextArrow: '<button type="button" class="right__arrow-slider"><img src="../images/card-detale/rigt-arrow.svg" alt=""></button>',
                     infinite: true,
                     speed: 700,
                     autoplay: true,

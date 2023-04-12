@@ -1,4 +1,4 @@
-export default  function handleCheckboxes() {
+
     // Get references to all checkboxes
     const checkbox1 = document.getElementById('checkbox1');
     const checkbox2 = document.getElementById('checkbox2');
@@ -28,4 +28,3 @@ export default  function handleCheckboxes() {
         checkbox2.checked = false;
       }
     });
-  }

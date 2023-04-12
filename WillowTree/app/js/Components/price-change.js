@@ -1,4 +1,4 @@
-export default function changePrice () {
+
     const minusBtns = document.querySelectorAll('.minus'); // Кнопки минус
     const plusBtns = document.querySelectorAll('.plus'); // Кнопки плюс
     const numberSpans = document.querySelectorAll('.number'); // Элементы с числами
@@ -44,6 +44,6 @@ export default function changePrice () {
             allPriceSpan.textContent = totalPrice.toLocaleString();
         });
     });
-}
+
 
 

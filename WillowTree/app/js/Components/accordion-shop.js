@@ -1,6 +1,4 @@
-// Export the function
-export default function accordionsFunction() {
-  
+
   // Select all accordion elements and accordion content elements
   const accordions = document.querySelectorAll(".accordion");
   const accordionContents = document.querySelectorAll(".accordion-content");
@@ -41,5 +39,3 @@ export default function accordionsFunction() {
       }
     });
   });
-}
-

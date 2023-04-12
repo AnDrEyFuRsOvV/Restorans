@@ -1,8 +1,4 @@
-
-export default function modalFunction(){
-
-
-   // Получаем ссылку на элемент с классом "description__size"
+// Получаем ссылку на элемент с классом "description__size"
 var descriptionSizeElement = document.querySelector('.description__size');
 
 // Получаем ссылку на модальное окно
@@ -31,6 +27,3 @@ modalCloseElement.addEventListener('click', function() {
 });
 
 
-
-
-}

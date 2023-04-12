@@ -1,4 +1,4 @@
-export default function modalFunction() {
+
   // Отримуємо посилання на елемент з класом "header__location-btn"
   var locationBtnElement = document.querySelector('.header__location-btn');
 
@@ -21,4 +21,3 @@ export default function modalFunction() {
     modalLocationElement.classList.remove('visible');
     modalLocationElementContainer.classList.remove('visible')
   });
-}
