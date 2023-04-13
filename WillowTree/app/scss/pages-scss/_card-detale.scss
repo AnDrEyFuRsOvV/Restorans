@@ -5,10 +5,10 @@
 
 .photos{
     &__card{
-        margin-right: 40px;
+        margin-right: 20px;
     }
     &__img-box{
-        max-width: 640px;
+        max-width: 600px;
         height: auto;
         margin-bottom: 10px;
     }
@@ -398,4 +398,16 @@
 
 .description__mod-slider{
     overflow: hidden
+}
+
+.photos__box.photos__box-slider{
+    max-width: 640px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+
+.description__card-wapper{
+    padding-left: 10px;
+    padding-right: 10px;
 }

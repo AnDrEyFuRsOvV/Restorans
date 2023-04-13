@@ -110,6 +110,15 @@
             }
         ]
     });
+    $('.photos__box-slider').slick({
+        arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        infinite: true,
+        speed: 700,
+        autoplay: true,
+        autoplaySpeed: 4000
+    });
     $('.description__mod-slider').slick({
         responsive: [
             {
