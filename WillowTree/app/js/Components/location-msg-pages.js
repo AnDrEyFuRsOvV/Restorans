@@ -120,6 +120,16 @@ setTimeout(function(element) {
 }, 1500);
 
   
+ //  Change image source on click event.
+ //  @param {string} id - ID of the image element.
+ function chg(id) {
+  var el = document.getElementById('info-img');
+  if (el.src.indexOf("images/info-img.svg") > 0) {
+    el.src = "../images/info-close.svg"
+  } else {
+    el.src = "../images/info-img.svg"
+  }
+}
 
 
 
@@ -147,16 +157,3 @@ setTimeout(function(element) {
 
 
 
-
-
-
-  
-//   // When an element with class "my-adres__btn" is clicked
-//   $('.my-adres__btn').click(function(event){
-      
-//     // Set the value of four text input elements to an empty string
-//     document.getElementById("textInput").value = "";
-//     document.getElementById("textInput-2").value = "";
-//     document.getElementById("textInput-3").value = "";
-//     document.getElementById("textInput-4").value = "";
-// });

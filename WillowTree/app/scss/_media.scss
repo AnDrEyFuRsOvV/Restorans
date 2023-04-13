@@ -390,15 +390,19 @@
 }
 
 @media (max-width: 850px){
+  .sidebar.not-visible{
+    display: none;
+    overflow: hidden;
+  }
+  .login-page__box-title{
+    display: flex;
+  }
 }
 @media (max-width: 840px){
   .header__menu-list-like{
     display: none;
     margin: 0;
     padding: 0;
-  }
-  .sidebar.not-visible{
-    display: none;
   }
 }
 @media (max-width: 830px){
