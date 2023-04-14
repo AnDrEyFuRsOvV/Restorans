@@ -1,0 +1,42 @@
+html,
+body {
+	height: 100%;
+	background-color: #F9EBEC;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	position: relative;
+	&::after{
+		position: absolute;
+		bottom: 30px;
+		right: 0;
+		content: url('../images/footer/branch-content-bottom.svg');
+  	}
+	&::before{
+		content: url('../images/footer/branch-content-top.svg');
+		top: 0px;
+		left: 0;
+		position: absolute;
+	}
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1200px;
+}
+
+
+
+
+
