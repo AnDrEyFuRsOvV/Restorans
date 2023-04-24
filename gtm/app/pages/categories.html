@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.min.css">
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+
+        <main class="main">
+
+            <!-- Повідомленя про локацію ліворуч  -->
+            <div class="location">
+                <button class="info"><img id="info-img" class="info-img" src="../images/header/info.svg"
+                        alt="info"></button>
+                <div class="location__info">
+                    <div class="location__info-inner">
+                        <div class="location__info-box">
+                            <img src="../images/header/map-pin.svg" alt="map">
+                            <div class="location__box-content">
+                                <p class="location__addres-title">Адреса</p>
+                                <p class="location__addres">вул. Комерційна, 1</p>
+                            </div>
+                        </div>
+                        <div class="location__info-box">
+                            <img src="../images/header/clock.svg" alt="clock">
+                            <div class="location__box-content">
+                                <p class="location__day">
+                                    Пн-Чт, Нд:
+                                    <span class="location__time">12:00-20:00</span>
+                                </p>
+                                <p class="location__day">
+                                    Пн-Чт, Нд:
+                                    <span class="location__time">12:00-20:00</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Повідомленя про локацію ліворуч кінець -->
+
+            <!-- Меню топбар -->
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="/" class="header__logo-link">
+                                <picture>
+                                    <source srcset="images/logo-smal.svg" media="(max-width: 490px)">
+                                    <img src="../images/header/logo.svg" alt="logo">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="header__location">
+                            <button class="header__location-btn">
+                                Змінити локацію
+                            </button>
+                        </div>
+                        <div class="header__search">
+                            <input class="header__search-input" name="search" type="text" placeholder="Пошук ...">
+                            <button class="header__search-btn"><img src="../images/header/search.svg" alt=""></button>
+                        </div>
+                        <nav class="header__nav">
+                            <ul class="header__menu">
+                                <li class="header__menu-item">
+                                    <a href="tel:380975787801" class="header__menu-link">
+                                        +38 (097)-578-78-01
+                                    </a>
+                                </li>
+                                <li class="header__menu-list-like">
+                                    <a href="/pages/menu/favorite.html" class="header__menu-like">
+                                        <img src="../images/header/like.svg" alt="header-like">
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="/pages/basket.html" class="header__menu-basket">
+                                        <img src="../images/header/basket.svg" alt="header-basket">
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="/pages/menu/login.html" class="header__menu-btn">
+                                        <img src="../images/header/menu.svg" alt="header-btn">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- Меню топбар кінець -->
+
+            <!-- Breadcrumbs -->
+
+            <div class="categories-breadcrumbs">
+                <div class="container">
+                    <div class="categories-breadcrumbs__inner">
+                        <a href="#" class="categories-breadcrumbs__link">
+                            Головна
+                        </a>
+                        <a href="#" class="categories-breadcrumbs__link active">
+                            Догляд за волоссям
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumbs -->
+
+            <div class="container">
+                <div class="categories">
+                    <div class="categories-choose">
+                        <div class="categories-choose__title">
+                            Категорії
+                        </div>
+
+                        <div class="categories-choose__acordeon">
+                            <div class="categories-choose__acordeon-wrapper">
+                                <img class="accordeon-img" src="../images/categories/acoordeon.svg" alt="">
+                                <p class="categories-choose__acordeon-title">
+                                    Догляд за волоссям
+                                </p>
+                            </div>
+                            <div class="categories-choose__acordeon-content">
+                                <div class="categories-choose__acordeon-content__text">
+                                    Шампуні
+                                </div>
+                                <div class="categories-choose__acordeon-content__text">
+                                    Незмивний догляд
+                                </div>
+                                <div class="categories-choose__acordeon-content__text accordeon2">
+                                    Змивний догляд
+                                    <div class="categories-choose__acordeon-content2">
+                                        <div class="categories-choose__acordeon-content__text2">
+                                            догляд
+                                        </div>
+                                        <div class="categories-choose__acordeon-content__text2">
+                                            догляд
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="categories-choose__acordeon-content__text">
+                                    Набори для волосся
+                                </div>
+                                <div class="categories-choose__acordeon-content__text">
+                                    Гребінці для волосся
+                                </div>
+                            </div>
+                        </div>
+
+                        <div iv class="categories-choose__acordeon">
+                            <div class="categories-choose__acordeon-wrapper">
+                                <img class="accordeon-img" src="../images/categories/acoordeon-2.svg" alt="">
+                                <p class="categories-choose__acordeon-title">
+                                    Догляд за тілом
+                                </p>
+                            </div>
+                            <div class="categories-choose__acordeon-content">
+                                <div class="categories-choose__acordeon-content__text">
+                                    Шампуні
+                                </div>
+                                <div class="categories-choose__acordeon-content__text">
+                                    Незмивний догляд
+                                </div>
+                                <div class="categories-choose__acordeon-content__text accordeon2">
+                                    Змивний догляд
+                                    <div class="categories-choose__acordeon-content2">
+                                        <div class="categories-choose__acordeon-content__text2">
+                                            догляд
+                                        </div>
+                                        <div class="categories-choose__acordeon-content__text2">
+                                            догляд
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="categories-choose__acordeon-content__text">
+                                    Набори для волосся
+                                </div>
+                                <div class="categories-choose__acordeon-content__text">
+                                    Гребінці для волосся
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="categories-cards">
+                        <div class="categories-cards__title">Догляд за волоссям</div>
+                        <div class="categories-cards__box">
+                            <a href="#" class="categories-cards__card">
+                                <img src="../images/categories/card-1.jpg" alt="" class="card__img">
+                                <p class="categories-cards__text">
+                                    Назва підкатегорії
+                                </p>
+                            </a>
+                            <a href="#" class="categories-cards__card">
+                                <img src="../images/categories/card-2.jpg" alt="" class="card__img">
+                                <p class="categories-cards__text">
+                                    Назва підкатегорії
+                                </p>
+                            </a>
+                            <a href="#" class="categories-cards__card">
+                                <img src="../images/categories/card-3.jpg" alt="" class="card__img">
+                                <p class="categories-cards__text">
+                                    Назва підкатегорії
+                                </p>
+                            </a>
+                            <a href="#" class="categories-cards__card">
+                                <img src="../images/categories/card-4.jpg" alt="" class="card__img">
+                                <p class="categories-cards__text">
+                                    Назва підкатегорії
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+
+
+
+
+        <!-- Футер бар -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__content">
+                        <div class="footer__content-box">
+                            <div class="footer__links">
+                                <a href="#" class="footer__logo">
+                                    <img src="../images/footer/logo.svg" alt="logo">
+                                </a>
+                                <div class="footer__social">
+                                    <a href="#" class="footer__social-link">
+                                        <img class="footer__social-img footer__social-img-1"
+                                            src="../images/footer/facebook.svg" alt="social">
+                                    </a>
+                                    <a href="#" class="footer__social-link">
+                                        <img class="footer__social-img footer__social-img-2"
+                                            src="../images/footer/instagram.svg" alt="social">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__content-box">
+                            <div class="footer__payments">
+                                <a href="#" class="footer__payments-link">
+                                    <img src="../images/footer/mono.png" alt="payments">
+                                </a>
+                                <a href="#" class="footer__payments-link">
+                                    <img src="../images/footer/wfp.png" alt="payments">
+                                </a>
+                                <a href="#" class="footer__payments-link">
+                                    <img src="../images/footer/visa.png" alt="payments">
+                                </a>
+                                <a href="#" class="footer__payments-link">
+                                    <img src="../images/footer/mc.png" alt="payments">
+                                </a>
+                            </div>
+                            <div class="footer__help">
+                                <a class="footer__help-link" href="#">
+                                    Політика конфіденційності
+                                </a>
+                                <a class="footer__help-link" href="#">
+                                    Умови користування
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content">
+                <a href="#" class="footer__content-wrapper">
+                    <img src="../images/footer/qb.svg" alt="qb-tools">
+                    <div class="footer__text">Powered by QB tools</div>
+                </a>
+            </div>
+        </footer>
+        <!-- Футер бар -->
+
+    </div>
+
+
+
+    <script src="../js/main.min.js"></script>
+    <script src="../js/Components/location-msg-2.js"></script>
+    <script src="../js/Components/accordeon.js"></script>
+</body>
+
+</html>
