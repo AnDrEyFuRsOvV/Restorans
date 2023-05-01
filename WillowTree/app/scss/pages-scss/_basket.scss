@@ -38,6 +38,7 @@
         }
     }
     &__row{
+        width: 100%;
         display: flex;
         padding-bottom: 20px;
         margin-bottom: 20px;
@@ -46,6 +47,7 @@
             margin-right: 10px;
         }
     }
+    
     &__box{
         display: flex;
         align-items: center;
@@ -71,12 +73,12 @@
         color: #3D405B;
     }
     &__descr{
-        margin-right: 343px;
+        // margin-right: 343px;
     }
     &__add-item{
         display: flex;
         align-items: center;
-        margin-right: 175px;
+        // margin-right: 175px;
     }
     &__price{
         font-family: 'Ubuntu';
@@ -95,7 +97,7 @@
         background-color: #494C69;
         border-radius: 4px;
         padding: 6px 19px;
-        margin-right: 185px;
+        // margin-right: 185px;
         cursor: pointer;
     }
     &__rekomend-title{
@@ -160,4 +162,6 @@
 .box__add{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }

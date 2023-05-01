@@ -2,7 +2,6 @@
     &__card-ref{
         margin-bottom: 50px;
         max-width: 216px;
-        margin-right: 30px;
     }
     &__card-ref-img {
         position: relative;
@@ -112,5 +111,137 @@
         &:hover{
             background: #6B6F8E;
         }
+    }
+    &__card-ref-img {
+        position: relative;
+        max-width: 200px;
+        min-height: 200px;
+        & img {
+            max-width: 200px;
+            min-height: 200px;
+            object-fit: cover;
+        }
+    }
+    &__card-ref{
+        margin-bottom: 50px;
+        max-width: 200px;
+        width: 100%;
+        
+        & + & {
+            margin-left: 20px;
+        }
+        
+    }
+}
+
+.catalog-shop{
+    width: 100%;
+}
+
+
+.shop__cards-ref{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ 
+
+
+
+@media (max-width: 600px){
+    .shop__cards-ref{
+        justify-content: space-between;
+    }
+    .shop__card-ref{
+        & + &{
+            margin-left: 0;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 470px){
+    .shop__card-ref{
+        max-width: 170px;
+        width: 100%;
+        & img {
+            max-width: 170px;
+            min-height: 170px;
+            object-fit: cover;
+        }
+    }
+    .shop{
+        &__card-ref-title{
+            max-width: 165px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        &__card-ref-real-price{
+            font-size: 10px;
+            line-height: 14px;
+            max-width: 50px;
+        }
+        &__card-ref-price{
+            font-size: 14px;
+            line-height: 14px;
+            max-width: 90px;
+        }
+        &__card-ref-btn{
+            margin: 0;
+            padding: 0;
+            border: none;
+            font-size: 14px;
+            line-height: 14px;
+            width: 86px;
+            height: 28px;
+        }
+    }
+    .shop__card-ref-img{
+        max-width: 170px;
+        min-height: 170px;
+    }
+}
+
+@media (max-width: 390px){
+    .shop__card-ref{
+        max-width: 150px;
+        width: 100%;
+        & img {
+            max-width: 150px;
+            min-height: 150px;
+            object-fit: cover;
+        }
+    }
+    .shop{
+        &__card-ref-title{
+            max-width: 145px;
+            font-size: 13px;
+            line-height: 13px;
+        }
+        &__card-ref-real-price{
+            font-size: 10px;
+            line-height: 14px;
+            max-width: 50px;
+        }
+        &__card-ref-price{
+            font-size: 13px;
+            line-height: 13px;
+            max-width: 90px;
+        }
+        &__card-ref-btn{
+            margin: 0;
+            padding: 0;
+            border: none;
+            font-size: 13px;
+            line-height: 13px;
+            width: 76px;
+            height: 23px;
+        }
+    }
+    .shop__card-ref-img{
+        max-width: 150px;
+        min-height: 150px;
     }
 }
