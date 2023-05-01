@@ -166,6 +166,8 @@
     .shop__card-ref{
         max-width: 170px;
         width: 100%;
+    }
+    .shop__card-ref-img{
         & img {
             max-width: 170px;
             min-height: 170px;
@@ -208,11 +210,6 @@
     .shop__card-ref{
         max-width: 150px;
         width: 100%;
-        & img {
-            max-width: 150px;
-            min-height: 150px;
-            object-fit: cover;
-        }
     }
     .shop{
         &__card-ref-title{
@@ -243,5 +240,10 @@
     .shop__card-ref-img{
         max-width: 150px;
         min-height: 150px;
+        & img {
+            max-width: 150px;
+            min-height: 150px;
+            object-fit: cover;
+        }
     }
 }
