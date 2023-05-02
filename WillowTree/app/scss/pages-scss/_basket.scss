@@ -171,6 +171,17 @@
 
 
 
-@media(max-width: 700px){
-
+@media(max-width: 950px){
+    .basket{
+        &__box{
+            display: block;
+        }
+        &__descr-item{
+            margin-bottom: 15px;
+        }
+    }
+    .box__add{
+        justify-content: space-between;
+        width: 250px;
+    }
 }
