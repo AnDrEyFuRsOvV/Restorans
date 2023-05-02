@@ -34,13 +34,14 @@
     &__inner{
         @extend %d-f-c; // Смотреть файл _vars.scss 
     }
-    &__logo{
-        margin-right: 50px;
+    &__logo img{
+        max-width: 280px;
     }
     &__location-btn{
         @extend %font_i_400; // Смотреть файл _vars.scss 
         margin: 0;
     padding: 0;
+    margin-left: 50px;
     border: none;
     background-color: transparent; // Смотреть файл _vars.scss 
         font-size: 14px;

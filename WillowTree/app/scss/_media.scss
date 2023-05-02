@@ -234,8 +234,10 @@
   //   margin-right: 108px;
   // }
 }
-@media (max-width: 950px){
-  
+@media (max-width: 890px){
+  .header__menu-basket{
+    margin-right: 15px;
+  }
 }
 @media (max-width: 880px){
   .catalog-shop__vine-img{
@@ -474,6 +476,9 @@
   }
   .header__search-input{
     display: none;
+  }
+  .header__logo{
+    margin-right: 50px;
   }
   .header__search-btn{
     position: absolute;
@@ -770,7 +775,20 @@
   .header__menu-basket{
     margin-right: 15px;
   }
-  
+  .header__logo img{
+    max-width: 170px;
+  }
+  .header__logo{
+    margin-right: 0;
+    max-width: 170px;
+  }
+  .header__search-btn{
+    right: -21px;
+    top: -21px;
+  }
+  .header__inner{
+    justify-content: space-between;
+  }
 }
 @media (max-width: 460px){
   .catalog-shop__vine-img{
@@ -781,6 +799,10 @@
   }
 }
 @media (max-width: 450px){
+  .header__search-btn{
+    right: -15px;
+    top: -21px;
+  }
   .top-slider{
     margin-bottom: 20px;
   }
@@ -889,7 +911,12 @@
     max-width: 320px;
   }
 }
-
+@media(max-width:435px){
+  .header__search-btn{
+    right: -10px;
+    top: -21px;
+  }
+}
 @media (max-width: 420px){
   // .header__menu-basket{
   //   margin-right: 5px;
@@ -952,7 +979,12 @@
     
   }
 }
-
+@media(max-width:410px){
+  .header__search-btn{
+    right: -5px;
+    top: -21px;
+  }
+}
 @media (max-width: 395px){
   
   .catalog-shop__vine-img{
@@ -966,6 +998,10 @@
       max-width: 150px;
       max-height: 150px;
     }
+  }
+  .header__search-btn{
+    right: 0;
+    top: -21px;
   }
 }
 
