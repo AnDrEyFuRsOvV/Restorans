@@ -1,9 +1,4 @@
 @import '../../vars';
-@import '../../fonts';
-@import '../../reset';
-@import '../../libs';
-@import '../../global';
-@import "../../media";
 .notification{
     &__box{
         @extend %d-f; // Смотреть файл _vars.scss

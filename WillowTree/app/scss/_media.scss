@@ -1,8 +1,4 @@
 @import './vars';
-@import './fonts';
-@import './reset';
-@import './libs';
-@import './global';
 @import './pages-media-scss/menu-media/about-qr-media';
 @import './pages-media-scss/menu-media/adres-media';
 @import './pages-media-scss/menu-media/favorite-media';
@@ -1172,3 +1168,22 @@
   }
 }
 
+@media (max-width: 850px) {
+  .login-page__inner {
+    /* margin-top: 20px; */
+  }
+  .sidebar__arrow {
+    /* padding: 10px 0; */
+    padding: 0px 0 10px 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .login-page__inner {
+    /* margin-top: 30px; */
+  }
+}
+
+.login-page__inner {
+  /* margin-top: 50px; */
+}
