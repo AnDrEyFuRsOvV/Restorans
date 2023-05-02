@@ -113,6 +113,7 @@
     &__all-box{
         display: flex;
         justify-content: end;
+        align-items: center;
     }
     &__all-price{
         font-family: 'Ubuntu';
@@ -120,7 +121,7 @@
         font-size: 24px;
         line-height: 150%;
         color: #3D405B;
-        margin-right: 15px;
+        margin-right: 15px; 
     }
     &__btn-order{
         font-family: 'Ubuntu';
@@ -132,6 +133,9 @@
         background-color: #494C69;
         border-radius: 4px;
         cursor: pointer;
+        text-align: center;
+        max-width: 160px;
+        max-height: 40px;
     }
 }
 
@@ -183,5 +187,26 @@
     .box__add{
         justify-content: space-between;
         width: 250px;
+    }
+}
+
+
+@media(max-width: 745px){
+    .basket__all-price{
+        font-family: 'Ubuntu';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #3D405B;
+        margin-right: 15px;
+    }
+}
+
+@media(max-width: 613px){
+    .basket__all-box{
+        display: block;
+    }
+    .basket__all-price{
+        margin-bottom: 20px;
     }
 }
