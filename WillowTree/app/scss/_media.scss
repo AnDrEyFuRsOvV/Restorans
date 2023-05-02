@@ -45,6 +45,8 @@
   }
   .photos__img-box__img{
     width: 100%;
+    min-height: 500px;
+    max-height: 600px;
   }
 }
 @media (max-width: 1300px){
@@ -191,6 +193,10 @@
   }
   .photos__img-slider{
     display: block;
+    max-height: 600px;
+    min-height: 500px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -547,11 +553,20 @@
 }
 
   @media (max-width: 700px){
+    .photos__img-slider{
+      display: block;
+      max-height: 600px;
+      min-height: 300px;
+      width: 100%;
+      height: auto;
+    }
     .header__logo-link{
       margin-right: 260px;
     }
     .photos__img-box__img{
       width: 100%;
+      max-height: 600px;
+      min-height: 300px;
     }
     .photos__card{
       width: 100%;
