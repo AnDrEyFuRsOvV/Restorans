@@ -73,6 +73,10 @@
         color: #3D405B;
         margin-top: 8px;
         margin-bottom: 7px;
+        min-height: 42px; 
+        max-height: 42px;
+        overflow: hidden;
+        word-wrap: anywhere;
     }
     &__card-ref-buy{
         @extend %d-f-sb; // Смотреть файл _vars.scss
@@ -139,6 +143,9 @@
 
   .shop__card-ref,
   .favorite__card-ref {
+    max-height: 284px;
+    height: 284px;
+    height: 100%;
     margin-right: 10px;
     &:last-child{
         margin-right: 0;
@@ -148,7 +155,6 @@
 .shop__cards-ref,
 .favorite__cards-ref{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
