@@ -179,7 +179,9 @@
         }
     }
     &__box-img{
+        max-width: 130px;
         width: 130px;
+        max-height: 130px;
         height: 130px;
         background-color: #F2F2F2;
         border-radius: 8px;
@@ -992,7 +994,9 @@
 
 
 
-
+.modal-location__logo{
+    max-width: 126px;    
+}
 
 
 
