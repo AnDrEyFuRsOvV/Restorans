@@ -758,11 +758,11 @@
     &__container{
         background-color: #FFFFFF;
         max-width: 472px;
-        max-height: 520px;
+        max-height: 530px;
         height: 100%;
         width: 100%;
         border-radius: 20px;
-        padding: 20px 20px 46px 40px ;
+        padding: 58px 40px 58px 40px;
         transform: translate3d(0, -100%, 0) perspective(1000px);
         transition: transform 0.3s ease-in-out;
         &.visible{
@@ -770,13 +770,9 @@
         }
     }
     &__header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         margin-bottom: 26px;
     }
     &__title{
-        margin-top: 43px;
         font-family: 'Ubuntu';
         font-weight: 700;
         font-size: 20px;
@@ -793,11 +789,20 @@
         margin-top: -43px;
     }
     &__body{
-        width: 100%;
-        max-width: 380px;
-        // overflow-y: scroll;
-        // max-height: 400px;
-        // height: 100%;
+        // width: 100%;
+        // max-width: 380px;
+        overflow-y: scroll;
+        max-height: 400px;
+        height: 100%;
+        padding-right: 5px;
+        &::-webkit-scrollbar {
+            background-color: #F2F2F2;
+            width: 8px;
+        }          
+        &::-webkit-scrollbar-thumb{
+            background-color: #6B6F8E;
+            border-radius: 8px;
+        }
     }
     &__city{
         width: 100%;
