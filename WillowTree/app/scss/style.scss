@@ -200,6 +200,9 @@
         height: 100%;
         height: 130px;
         background-color: #F2F2F2;
+        & img{
+            border-radius: 8px;
+        }
     }   
     &__item-text{
         @extend %font_u_500; // Смотреть файл _vars.scss
@@ -754,6 +757,10 @@
     }
     &__container{
         background-color: #FFFFFF;
+        max-width: 472px;
+        max-height: 520px;
+        height: 100%;
+        width: 100%;
         border-radius: 20px;
         padding: 20px;
         transform: translate3d(0, -100%, 0) perspective(1000px);
@@ -786,7 +793,11 @@
         margin-top: -43px;
     }
     &__body{
+        width: 100%;
         max-width: 380px;
+        // overflow-y: scroll;
+        // max-height: 400px;
+        // height: 100%;
     }
     &__city{
         width: 100%;
@@ -806,69 +817,62 @@
         color: #3C3F59;
         margin-bottom: 20px;
     }
-    &__box{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 20px;
-        cursor: pointer;
-    }
-    &__img{
-        margin-right: 10px;
-    }
-    &__info-content{
-        background-image: url(../images/bg-modal.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        min-width: 232px;
-        border-radius: 8px;
-        padding: 16px 23px;
-        margin-bottom: 5px;
+    
+
+
+    &__box {
+        max-height: 141px;
+        margin-bottom: 15px;
+        width: 100%;
+        border: 1px solid #D8D8E0;
+        border-radius: 6px;
+        padding: 15px 20px;
         position: relative;
         &::after{
-            content: url(../images/arrow-modal.svg);
             position: absolute;
-            bottom: 12px;
-            right: 10px;
+            content: url(../images/arrow-modal-location.svg);
+            right: 20px;
+            bottom: 15px;
+            cursor: pointer;
         }
     }
-    &__info-text,
-    &__info-time{
+    &__box-title {
         font-family: 'Ubuntu';
         font-weight: 500;
-        font-size: 12px;
-        line-height: 118%;
-        color: #FFFFFF;
-        text-align: center;
-    }
-    &__info-box{
-        display: flex;
-        align-items: start;
-        margin-bottom: 10px;
-        &:last-child{
-            margin-bottom: 0;
-        }
-    }
-    &__info-box img{
-        margin-right: 7px;
-    }
-    &__num{
-        font-family: 'Ubuntu';
-        font-weight: 500;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 118%;
         color: #3D405B;
+        margin-bottom: 5px;
+    }
+    &__box-adress {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        max-width: 340px;
+        line-height: 128%;
+        color: #3D405B;
+        margin-bottom: 10px;
+    }
+    &__box-number {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 128%;
+        color: #3D405B;
         text-decoration-line: underline;
-        position: relative;
-        padding-left: 22px;
-        &::before{
-            position: absolute;
-            content: url(../images/phone-modal.svg);
-            top: 0;
-            left: 0;
-
-        }
+    }
+    &__box-descr {
+        margin-top: 10px;
+    }
+    &__box-descr-text {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 128%;
+        color: #3D405B;
     }
 }
 
@@ -1030,8 +1034,92 @@
     max-width: 130px;
     height: 100%;
     width: 100%;
+    border-radius: 8px;
 }
 
+.no-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-height: 700px;
+    align-items: center;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        max-width: 450px;
+        // width: 100%;
+    }
+    
+    &__img {
+    }
+    
+    &__title {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #3D405B;
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    
+    &__descr {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #3D405B;
+        text-align: center;
+    }
+}
+
+.baner-detale {
+    &__inner {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__img {
+        max-width: 1170px;
+        margin-bottom: 60px;
+        object-fit: cover;
+        & img{
+            width: 100%;
+        }
+    }
+    &__box{
+        margin-left: 15px;
+    }
+    &__text,
+    &__title {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 135%;
+        max-width: 1170px;
+        color: #3D405B;
+        text-align: left;
+
+        width: 100%;
+    }
+    &__descr {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: 'Ubuntu';
+        max-width: 1170px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 135%;
+        color: #3D405B;
+        width: 100%;
+    }
+}
 
 
 
