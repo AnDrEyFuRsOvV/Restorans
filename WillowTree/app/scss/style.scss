@@ -792,15 +792,15 @@
         // width: 100%;
         // max-width: 380px;
         overflow-y: scroll;
-        max-height: 400px;
+        max-height: 370px;
         height: 100%;
-        padding-right: 5px;
+        padding-right: 10px;
         &::-webkit-scrollbar {
             background-color: #F2F2F2;
             width: 8px;
         }          
         &::-webkit-scrollbar-thumb{
-            background-color: #6B6F8E;
+            background-color: #c9c9cf;
             border-radius: 8px;
         }
     }
