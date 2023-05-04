@@ -768,6 +768,14 @@
         &.visible{
             transform: translate3d(0, 0, 0) perspective(1000px);
         }
+        position: relative;
+        &::after{
+            content: url(../images/close-modal.svg);
+            top: 16px;
+            cursor: pointer;
+            right: 21px;
+            position: absolute;
+        }
     }
     &__header{
         margin-bottom: 26px;
