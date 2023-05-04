@@ -508,7 +508,6 @@
   }
   .stock__box-img img{
     align-items: center;
-    margin-left: 18px;
     margin-top: 0;
   }
 }
@@ -774,6 +773,14 @@
   }
 }
 @media (max-width: 500px){
+  .no-card__title{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .no-card__descr{
+    font-size: 14px;
+    line-height: 16px;
+  }
   .shop__card-title{
     font-size: 14px;
     line-height: 14px;
@@ -956,6 +963,12 @@
   // .header__menu-basket{
   //   margin-right: 5px;
   // }
+  .no-card__img{
+    width: 100%;
+    & img{
+      width: 100%;
+    }
+  }
 }
 @media (max-width: 417px){
   .header__logo-link{
