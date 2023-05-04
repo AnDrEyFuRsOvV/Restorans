@@ -890,122 +890,6 @@
 
 
 
-// .shop{
-//     &__card-ref{
-//         margin-bottom: 50px;
-//         max-width: 216px;
-//         margin-right: 30px;
-//     }
-//     &__card-ref-img {
-//         position: relative;
-//         max-width: 216px;
-//         min-height: 216px;
-//     }
-//     &__card-ref__product {
-//         position: absolute;
-//         left: 0;
-//         right: 0;
-//         top: 0;
-//         bottom: 0;
-//     }
-//     &__card-ref-discount {
-//         margin-top: 13px;
-//         margin-left: 10px ;
-//         position: absolute;
-//         left: 0;
-//         top: 0;
-//     }
-//     &__card-ref-percent {
-//         @extend %font_u_500; 
-//         text-align: center;
-//         font-size: 14px;
-//         line-height: 16px;
-//         color: #FFFFFF;
-//         background-color: #EB3A65;
-//         border-radius: 4px;
-//         padding: 3px 5px;
-//     }
-//     &__card-ref-like {
-//         position: absolute;
-//         right: 0;
-//         top: 0;
-//         margin: 0;
-//         padding: 0;
-//         border: none;
-//         background-color: transparent;
-//         margin: 7px 4px;
-//         padding: 5px 3px 3px 3px;
-//         cursor: pointer;
-//         &:hover{
-//             .shop__card-ref-svg path{
-//                 fill: #EB3A65;
-//             }
-//         }
-//     }
-    
-//     &__card-ref-weight {
-//         position: absolute;
-//         bottom: 13px;
-//         left: 10px;
-//         right: 0;
-//       }
-//     &__weight {
-//         padding: 3px 5px;
-//         background-color: rgba(#fff, .74);
-//         border-radius: 4px;
-//     }
-
-
-//     &__card-ref-title{
-//         max-width: 200px;
-//         @extend %font_u_400; // Смотреть файл _vars.scss
-//         font-size: 16px;
-//         line-height: 21px;
-//         color: #3D405B;
-//         margin-top: 8px;
-//         margin-bottom: 7px;
-//     }
-//     &__card-ref-buy{
-//         @extend %d-f-sb; // Смотреть файл _vars.scss
-//         align-items: center;
-//         max-width: 216px;
-//     }
-//     &__card-ref-real-price{
-//         @extend %font_u_400; // Смотреть файл _vars.scss
-//         font-size: 10px;
-//         line-height: 14px;
-//         text-decoration-line: line-through;
-//         color: #696C87;
-//         display: block;
-//         max-width: 50px;
-//     }
-//     &__card-ref-price{
-//         @extend %font_u_700; // Смотреть файл _vars.scss
-//         font-size: 16px;
-//         line-height: 14px;
-//         color: #3D405B;
-//         max-width: 90px;
-//     }
-//     &__card-ref-btn{
-//         @extend %font_u_500; // Смотреть файл _vars.scss
-//         margin: 0;
-//         padding: 0;
-//         border: none;
-//         background-color: transparent; // Смотреть файл _vars.scss
-//         background-color: #494C69;
-//         border-radius: 4px;
-//         font-size: 16px;
-//         line-height: 14px;
-//         text-align: center;
-//         color: #FFFFFF;
-//         padding: 8px 22px 10px 22px;
-//         cursor: pointer;
-//         transition: .3s;
-//         &:hover{
-//             background: #6B6F8E;
-//         }
-//     }
-// }
 
 
 .footer__logo{
@@ -1019,13 +903,11 @@
 .footer__logo img {
     width: 100%;
     height: 100%;
+
+    object-fit: contain;
   }
   
   .footer__logo {
-    /* min-width: 130px; */
-    /* min-height: 30px; */
-    /* max-width: 230px; */
-    /* max-height: 60px; */
     width: 230px;
     height: 60px;
   }
