@@ -39,7 +39,7 @@
     }
     &__logo img{
         max-width: 280px;
-        object-fit: cover;
+        object-fit: contain;
     }
     &__location-btn{
         @extend %font_u_400; // Смотреть файл _vars.scss 
@@ -66,13 +66,19 @@
     }
     &__search-input{
         margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent; // Смотреть файл _vars.scss 
+        padding: 0;
+        border: none;
+        background-color: transparent; // Смотреть файл _vars.scss 
+        outline: none;
         border: 1px solid #3C3F59;
         border-radius: 90px;
         width: 322px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
         margin-right: 63px;
+        line-height: 18px;
         max-height: 38px;
         padding: 10px 15px 10px;
         &::placeholder{
@@ -213,7 +219,6 @@
         margin-top: 10px;
         color: #3D405B;
         text-align: center;
-        max-width: 97px;
         word-wrap: anywhere;
         width: 100%;
         &:nth-child(9){
@@ -438,7 +443,7 @@
         transition: .3s;
         &:hover{
             text-decoration: underline;
-            color: blue;
+            opacity: 0.5;
         }
         &::after{
             content: "|";
@@ -769,16 +774,21 @@
             transform: translate3d(0, 0, 0) perspective(1000px);
         }
         position: relative;
-        &::after{
-            content: url(../images/close-modal.svg);
-            top: 16px;
-            cursor: pointer;
-            right: 21px;
-            position: absolute;
-        }
+        
+    }
+    &__close{
+        position: absolute;
+        top: -46px;
+        right: -24px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
     }
     &__header{
         margin-bottom: 26px;
+        position: relative;
     }
     &__title{
         font-family: 'Ubuntu';
@@ -788,24 +798,16 @@
         color: #3D405B;
        
     }
-    &__close{
-        margin: 0;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        margin-top: -43px;
-    }
     &__body{
         // width: 100%;
         // max-width: 380px;
         overflow-y: scroll;
-        max-height: 370px;
+        max-height: 365px;
         height: 100%;
         padding-right: 10px;
         &::-webkit-scrollbar {
-            background-color: #F2F2F2;
             width: 8px;
+            max-height: 365px;
         }          
         &::-webkit-scrollbar-thumb{
             background-color: #c9c9cf;
@@ -835,18 +837,17 @@
 
     &__box {
         max-height: 141px;
+        min-height: 141px;
         margin-bottom: 15px;
         width: 100%;
         border: 1px solid #D8D8E0;
         border-radius: 6px;
         padding: 15px 20px;
         position: relative;
-        &::after{
+        &__arow{
             position: absolute;
-            content: url(../images/arrow-modal-location.svg);
             right: 20px;
             bottom: 15px;
-            cursor: pointer;
         }
     }
     &__box-title {
@@ -916,7 +917,8 @@
 .footer__logo img {
     width: 100%;
     height: 100%;
-
+    align-items: start;
+    text-align: left;
     object-fit: contain;
   }
   
@@ -947,8 +949,6 @@
         // width: 100%;
     }
     
-    &__img {
-    }
     
     &__title {
         font-family: 'Ubuntu';
@@ -1016,7 +1016,19 @@
     }
 }
 
+.shop__card-ref{
+    margin-right: 30px;
+    max-width: 216px;
+    width: 100%;
+    &:nth-child(5n){
+        margin-right: 0;
+    }
+}
 
+.shop__card-ref__img img{
+    max-width: 216px;
+    max-height: 216px;
+}
 
 @import "media";
 
