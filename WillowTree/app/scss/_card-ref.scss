@@ -123,9 +123,13 @@
         position: relative;
         max-width: 216px;
         min-height: 216px;
+        max-height: 216px;
+        width: 100%;
         & img {
             max-width: 216px;
             min-height: 216px;
+            max-height: 216px;
+            width: 100%;
             object-fit: cover;
         }
     }
