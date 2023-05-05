@@ -317,14 +317,14 @@
         padding-bottom: 25px;
         border-bottom: 1px solid #F1F1F1;
         position: relative;
-        &::before{
-            content: url(../images/catalog-book.svg);
-            padding: 5px 6px;
-            background-color: #3D405B;
-            border-radius: 100%;
-            padding-bottom: 1px;
-            margin-right: 21px;
-        }
+        // &::before{
+        //     content: url(../images/catalog-book.svg);
+        //     padding: 5px 6px;
+        //     background-color: #3D405B;
+        //     border-radius: 100%;
+        //     padding-bottom: 1px;
+        //     margin-right: 21px;
+        // }
     }
     &__categories{
         position: relative;

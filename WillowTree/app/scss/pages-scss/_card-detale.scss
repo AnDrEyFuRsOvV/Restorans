@@ -31,6 +31,22 @@
     width: 100%;
 }
 
+.breadcrumbs-category{
+    position: absolute;
+    cursor: pointer;
+    &::after{
+        position: absolute;
+        top: 4px;
+        right: -11px;
+        content: '/';
+        cursor:text;
+        color: rgba(#3D405B, 0.5);
+        @extend %font_u_500;// Смотреть файл _vars.scss
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
 .description{
     &__breadcrumbs{
         @extend %font_u_500;// Смотреть файл _vars.scss
@@ -38,19 +54,24 @@
         line-height: 18px;
         color: #3D405B;
         margin-bottom: 39px;
+        padding-top: 4px;
         display: flex;
         align-items: center;
         position: relative;
-        &::before{
-            content: url(../images/catalog-book.svg);
-            padding: 5px 6px;
-            background-color: #3D405B;
-            border-radius: 100%;
-            padding-bottom: 1px;
-            margin-right: 24px;
-            cursor: pointer; 
+        margin-left: 43px;
+        white-space: nowrap;
+        overflow-x: scroll;
+        padding-bottom: 2px;
+        &::-webkit-scrollbar-thumb {
+            background-color: #c9c9cf;
+            border-radius: 8px;
+            cursor: pointer;
         }
-        
+        &::-webkit-scrollbar {
+            height: 4px;
+            max-height: 365px;
+        }          
+
     }
     &__categories{
         color: #3D405B;
