@@ -1032,6 +1032,24 @@
     max-height: 216px;
 }
 
+.login__phone{
+    @extend %font_u_400; // Смотреть файл _vars.scss
+    top: 0px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #696C87;
+}
+
+.login__phone-input{
+    padding-left: 49px;
+}
+
+.iti__selected-flag {
+    margin-top: 8px;
+    margin-left: -5px;
+}
+
+
 @import "media";
 
 
