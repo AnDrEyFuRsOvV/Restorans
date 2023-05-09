@@ -110,6 +110,11 @@
             color: #3C3F59;
         }
     }
+    &__search{
+        & form {
+            width: 100%;
+        }
+    }
     &__search-btn {
         position: absolute;
         margin: 0;
