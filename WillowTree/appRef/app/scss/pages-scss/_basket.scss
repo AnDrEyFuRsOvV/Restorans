@@ -8,6 +8,7 @@
         display: flex;
         align-items: center;
         position: relative;
+        margin-left: 10px;
         // &::before{
         //     content: url(../images/catalog-book.svg);
         //     padding: 5px 6px;
@@ -21,7 +22,7 @@
     }
     &__categories{
         color: #3D405B;
-        margin-right: 24px;
+        margin-left: 24px;
         position: relative;
         &::before{
             content: "/";
@@ -42,11 +43,11 @@
         padding: 0 10px;
         width: 100%;
         display: flex;
+        margin-right: 10px;
         padding-bottom: 20px;
         margin-bottom: 20px;    
         border-bottom: 1px solid #F1F1F1;
         & img{
-            margin-right: 10px;
             // max-width: 100px;
             // max-height: 100px;
         }
@@ -58,7 +59,6 @@
         justify-content: space-between;
         width: 100%;
         & img{
-            margin-right: 8px;
             max-width: 100px;
             height: auto;
         }
@@ -148,11 +148,13 @@
 
 .basket__row-img{
     width: 100px;
-    height: 100px;
     margin-right: 10px;
+    height: 100px;
 
 }
-
+.basket__all-box{
+    margin-left: 10px;
+}
 .minus{
     padding: 13px 8px;
     background-color: #F1F1F1;
@@ -162,7 +164,7 @@
 }
 .number{
     margin-top: -3px;
-    margin-right: 9px;
+    margin-right: 5px;
     font-family: 'Ubuntu';
     font-weight: 500;
     font-size: 14px;

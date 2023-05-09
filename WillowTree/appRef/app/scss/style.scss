@@ -12,15 +12,15 @@
 @import './pages-scss/card-detale';
 
 // // імпорт модулів menu
-// @import './pages-scss/menu/about-qr';
-// @import './pages-scss/menu/favorite';
-// @import './pages-scss/menu/language';
-// @import './pages-scss/menu/login';
-// @import './pages-scss/menu/loyalty';
-// @import './pages-scss/menu/my-adres';
-// @import './pages-scss/menu/notification';
-// @import './pages-scss/menu/orders';
-// @import './pages-scss/menu/time-work';
+@import './pages-scss/menu/about-qr';
+@import './pages-scss/menu/favorite';
+@import './pages-scss/menu/language';
+@import './pages-scss/menu/login';
+@import './pages-scss/menu/loyalty';
+@import './pages-scss/menu/my-adres';
+@import './pages-scss/menu/notification';
+@import './pages-scss/menu/orders';
+@import './pages-scss/menu/time-work';
 
 // @import './card-ref';
 
@@ -329,7 +329,7 @@
         max-width: 200px;
         @extend %font_u_400; // Смотреть файл _vars.scss
         font-size: 16px;
-        line-height: 21px;
+        line-height: 24px;
         color: #3D405B;
         margin-top: 8px;
         margin-bottom: 7px;
@@ -499,6 +499,7 @@
     }
     &__content{
         display: flex;
+        padding: 0 15px;
         justify-content: space-between;
     }
     &__content-wrapper{
@@ -1205,6 +1206,19 @@
     }
 }
 
+
+
+.location__day *{
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3d405b;
+}
+
+select#payment_type_select {
+    padding-left: 2px;
+}
 
 @import "media";
 
